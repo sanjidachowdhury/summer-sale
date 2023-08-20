@@ -94,6 +94,19 @@
                             </div>
                         </div>
 
+                        <!-- <div onclick="handleClick(this)" class="card w-72  bg-base-100 shadow-xl">
+                            <figure class="px-10 pt-10 ">
+                                <img src="/images/prod1.png" alt="Shoes" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 class="card-title">K. Accessories</h2>
+
+                                <div class="card-actions">
+                                    <p><span>25</span>.00 TK</p>
+                                </div>
+                            </div>
+                        </div> -->
+
                     </div>
                 </div>
 
@@ -140,9 +153,8 @@
                     <div class="p-5">
                         <p class="font-normal mb-2 ">Have coupon?</p>
                         <input class="border border-inherit p-1 rounded-lg" type="text" placeholder="Coupon code">
-
                         <!-- apply button -->
-                        <button
+                        <button onclick="handleClick(this)"
                             class="apply-button py-1 px-3 bg-pink-500 text-white font-medium rounded-lg ">Apply</button>
                     </div>
 
@@ -154,7 +166,7 @@
 
                     </div>
 
-                    <div class="p-5">
+                    <div class="p-5 ">
 
                         <p><span class="text-1xl font-bold">Total Price : </span><span id="total">00 </span>Tk</p>
                         <p><span class="text-1xl font-bold"> Discount : </span> <span id="discount">00</span></p>
@@ -162,25 +174,10 @@
                         </p>
                         <div class="flex items-center justify-center">
 
-
-                            <!-- make purchase button using modal -->
-                            <button
-                                class="btn purchase-button mt-4 py-3 px-16 bg-pink-500 text-white font-medium rounded-lg "
-                                onclick="my_modal_1.showModal()">Make
+                            <!-- make purchase button -->
+                            <button onclick="handleClick(this)"
+                                class="purchase-button mt-4 py-3 px-16 bg-pink-500 text-white font-medium rounded-lg ">Make
                                 Purchase</button>
-                            <dialog id="my_modal_1" class="modal">
-                                <form method="dialog" class="modal-box">
-                                    <img class="mx-auto" src="/images/congo.png" alt="" srcset="">
-                                    <h3 class="font-bold text-2xl text-center">Congratulations</h3>
-                                    <p class="py-4 text-center ">Your Purchase the product</p>
-                                    <div class="modal-action flex  justify-center -mt-1">
-                                        <!-- if there is a button in form, it will close the modal -->
-                                        <button id="home-page"
-                                            class="btn px-6 bg-pink-500 text-white font-medium rounded-lg ">Go
-                                            Home</button>
-                                    </div>
-                                </form>
-                            </dialog>
                         </div>
                     </div>
 
@@ -188,13 +185,13 @@
                 </div>
 
             </div>
-
         </section>
 
     </main>
 
-    <script src="JS/first.js"></script>
 
+
+    <script src="JS/first.js"></script>
 </body>
 
 </html>

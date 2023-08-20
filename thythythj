@@ -69,17 +69,7 @@ function handleClick(element) {
     }
 }
 
-
-
-// home page from modal
-
-function goToHomePage() {
-    window.location.href = 'http://127.0.0.1:5500/index.html';
 }
-
-// Add event listener to the "Go Home" button
-const goHomeButton = document.getElementById('home-page');
-goHomeButton.addEventListener('click', goToHomePage);
 
 
 
