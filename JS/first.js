@@ -80,9 +80,3 @@ function goToHomePage() {
 // Add event listener to the "Go Home" button
 const goHomeButton = document.getElementById('home-page');
 goHomeButton.addEventListener('click', goToHomePage);
-
-
-
-
-
-
